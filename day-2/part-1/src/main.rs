@@ -33,8 +33,6 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-    use std::collections::LinkedList;
-    use crate::GameSet;
     use crate::parse_line;
 
     #[test]
