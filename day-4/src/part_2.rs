@@ -34,7 +34,7 @@ pub mod part_2 {
             let mut w = cards[idx].winners as usize;
             let copies = cards[idx].copies;
             while w != 0 {
-                if (idx+w < cards.len()) {
+                if idx+w < cards.len() {
                     cards[idx+w].add_copies(copies);
                 }
                 w -= 1;
