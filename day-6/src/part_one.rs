@@ -9,7 +9,6 @@ pub mod part_one {
             let sqrt_delta = f64::sqrt(delta as f64);
             let t_min = ((self.time as f64 - sqrt_delta) / 2.0 + 0.1).ceil();
             let t_max = ((self.time as f64 + sqrt_delta) / 2.0 - 0.1).floor();
-            println!("{} {}", t_max, t_min);
             (t_max - t_min + 1.0) as u32
         }
     }
